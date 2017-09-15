@@ -1,2 +1,2 @@
 # only-a-css-loader
-Broken out into it's own repo
+It's `a-css-loader` broken out into its own repo so we can install it with a github url

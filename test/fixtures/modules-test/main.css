@@ -1,0 +1,25 @@
+@import './imported-styles.css';
+@require './imported-styles-2.css';
+
+:local(.local) {
+  background-color: black;
+}
+
+:local(.composed-local) {
+  composes: local;
+  color: red;
+}
+
+:local(.composed-import) {
+  composes: imported-local from './imported-locals.css';
+  composes: simple-module from './simple-module';
+}
+
+.global-class {
+  color: blue
+}
+
+:export {
+  exported-value: true
+}
+
